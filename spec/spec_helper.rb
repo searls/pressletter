@@ -1,6 +1,7 @@
 require 'rspec'
 require 'gimme'
 require 'rspec/given'
+require 'letterpress'
 
 RSpec.configure do |config|
   config.mock_framework = Gimme::RSpecAdapter
