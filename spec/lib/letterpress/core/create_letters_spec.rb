@@ -2,7 +2,7 @@ describe "Letterpress::Core#create_letters" do
   include Letterpress::Core
 
   context "several letters" do
-    When(:result) { create_letters("c a ba") }
+    When(:result) { create_letters("c a ba\n") }
     Then { result.as_array.should == ["A", "A", "B", "C"] }
     Then { result.as_hash.should == { "A" => 2, "B" => 1, "C" => 1 }}
   end

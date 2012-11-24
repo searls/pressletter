@@ -1,11 +1,12 @@
-describe "Letterpress::Core#format_words" do
+describe "Letterpress::Core#print_words" do
   include Letterpress::Core
 
   Given(:words) { Letterpress::Values::Words.new(["AL", "BAR", "ZEBRA"]) }
-  When(:result) { format_words(words) }
+  When(:result) { print_words(words) }
   Then do
-    result.should == "5 - ZEBRA\n" +
+    result.should == "2 - AL\n" +
                      "3 - BAR\n" +
-                     "2 - AL"
+                     "5 - ZEBRA"
+
   end
 end

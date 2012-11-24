@@ -1,7 +1,7 @@
 module Letterpress::Shell
   class WritesOutput
-    def write
-
+    def write(s)
+      puts(s)
     end
   end
 end

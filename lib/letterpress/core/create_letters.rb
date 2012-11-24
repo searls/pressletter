@@ -2,7 +2,7 @@ module Letterpress::Core
   def create_letters(input)
     Letterpress::Values::Letters.new(
       ensure_alphabetical(
-        input.split('').
+        input.chomp.split('').
           map { |c| c.upcase }.
             reject { |c| c == ' ' }.compact.sort
       )

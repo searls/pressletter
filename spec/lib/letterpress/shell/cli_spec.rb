@@ -13,7 +13,8 @@ module Letterpress::Shell
         verify(writes_output).write contains "7 - EPITOME\n"+
                                              "7 - MEMITIC\n" +
                                              "4 - TENT\n" +
-                                             "4 - TINT"
+                                             "4 - TINT\n" +
+                                             "3 - COT"
       end
 
     end
