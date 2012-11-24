@@ -36,9 +36,9 @@ Here's what a board looked like in a game I played with [@steveklabnik](https://
 
 ![pressletter Screen](http://i.minus.com/ibv4sMC7Msl5Fv.png)
 
-Using the pressletter gem, you can take a look at what words *would* have been possible to play by passing in all 25 available letters (including any repeats, since the rules dictate that each letter is consumed as it is used).
+Using the pressletter gem, you can search for playable words by providing the 25 letters on the game board (even any repeats, since the game rules stipulate that each letter can only be used as many times as it appears on the board).
 
-As you can see in the screen, those letters (in lexical order) are: `E I P T C T B N T Y M E I P H O X V I T K M Z I B`.
+For instance, the letters in the provided screenshot are: `E I P T C T B N T Y M E I P H O X V I T K M Z I B`.
 
 ### command-line
 
