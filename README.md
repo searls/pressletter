@@ -32,7 +32,7 @@ Inside your Bundler project, the binary can then be accessed with `bundle exec p
 
 ## Example
 
-Here's what a board looked like in a game I played with [steveklabnik](https://github.com/steveklabnik):
+Here's what a board looked like in a game I played with [@steveklabnik](https://github.com/steveklabnik):
 
 ![pressletter Screen](http://i.minus.com/ibv4sMC7Msl5Fv.png)
 
