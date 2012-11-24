@@ -85,8 +85,8 @@ Bench.mark "eiptctbntymeiphoxvitkmzib" do
   Pressletter.solve("eiptctbntymeiphoxvitkmzib")
 end
 
-Bench.mark "agslumxaeyylyuwfoszmddjhi" do
-  Pressletter.solve("agslumxaeyylyuwfoszmddjhi")
-end
+# Bench.mark "agslumxaeyylyuwfoszmddjhi" do
+#   Pressletter.solve("agslumxaeyylyuwfoszmddjhi")
+# end
 
 puts Bench.run.total_time
