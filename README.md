@@ -37,9 +37,15 @@ E I P T C T B N T Y M E I P H O X V I T K M Z I B
 
 ```
 
-### ruby
+### Ruby
 
-Here's an interactive shell session that uses the gem programmatically:
+You can, of course, also look for solutions using pure ruby. The public API is exceedingly simple:
+
+**Pressletter.solve(letters*[, config]*)**
+
+For input, all that's needed is a string or array of candidate letters. A config object that responds to `dictionary_location` with a path of a dictionary file can also be optionally provided. An array (sorted largest-to-smallest) of valid words is returned.
+
+Here's an interactive session that uses the gem programmatically:
 
 ``` ruby
 $ irb
