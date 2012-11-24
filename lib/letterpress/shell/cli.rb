@@ -11,9 +11,7 @@ module Letterpress::Shell
     def main
       @writes_output.write(
         format_words(
-          rank_words(
-            find_words(load_dictionary(@config.dictionary_location), create_letters(@reads_input.read))
-          )
+          find_words(load_dictionary(@config.dictionary_location), create_letters(@reads_input.read))
         )
       )
     end

@@ -1,8 +1,6 @@
 module Letterpress::Shell
   describe CLI do
-    Given(:config) { ::Letterpress::Values::Config.new(
-      :dictionary_location => File.expand_path("../../../fixtures/simple_dict.txt", __FILE__))
-    }
+    Given(:config) { ::Letterpress::Values::Config.new(File.expand_path("../../../../fixtures/simple_dict.txt", __FILE__))}
     Given(:reads_input) { gimme(ReadsInput) }
     Given(:writes_output) { gimme(WritesOutput) }
 
@@ -11,13 +9,11 @@ module Letterpress::Shell
     describe "#main" do
       Given { give(reads_input).read {"eiptctbntymeiphoxvitkmzib"} }
       When { subject.main }
-      xit do
-        verify(writes_output).write <<-TEXT.gsub /^\s+/, ""
-        7 - EPITOME
-        7 - MEMITIC
-        4 - TENT
-        4 - TINT
-        TEXT
+      Then do
+        verify(writes_output).write contains "7 - EPITOME\n"+
+                                             "7 - MEMITIC\n" +
+                                             "4 - TENT\n" +
+                                             "4 - TINT"
       end
 
     end
