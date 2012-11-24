@@ -4,7 +4,7 @@ Letterpress is a fantastic game for iOS written by [Loren Brichter](http://www.a
 
 ## Example
 
-Here's what a board looked like in a game I played with @steveklabnik:
+Here's what a board looked like in a game I played with [steveklabnik](https://github.com/steveklabnik):
 
 ![pressletter Screen](http://i.minus.com/ibv4sMC7Msl5Fv.png)
 
