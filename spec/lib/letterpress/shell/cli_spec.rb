@@ -10,11 +10,11 @@ module Letterpress::Shell
       Given { give(reads_input).read {"eiptctbntymeiphoxvitkmzib"} }
       When { subject.main }
       Then do
-        verify(writes_output).write contains "7 - EPITOME\n"+
-                                             "7 - MEMITIC\n" +
-                                             "4 - TENT\n" +
-                                             "4 - TINT\n" +
-                                             "3 - COT"
+        verify(writes_output).write contains "EPITOME\n"+
+                                             "MEMITIC\n" +
+                                             "TENT\n" +
+                                             "TINT\n" +
+                                             "COT"
       end
 
     end

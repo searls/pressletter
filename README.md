@@ -1,6 +1,6 @@
 # Letterpress
 
-Letterpress is a fantastic game for iOS written by [Loren Brichter](http://www.atebits.com). This is a gem that solves Letterpress boards using a the
+Letterpress is a fantastic game for iOS written by [Loren Brichter](http://www.atebits.com). This is a gem that solves Letterpress boards using an included plaintext dictionary of words.
 
 ## Example
 
@@ -12,9 +12,9 @@ Using the letterpress gem, you can take a look at what words *would* have been p
 
 As you can see in the screen, those letters (in lexical order) are: `E I P T C T B N T Y M E I P H O X V I T K M Z I B`.
 
-### binary
+### command-line
 
-The simplest way to invoke the gem is using the `letterpress` binary.
+The simplest way to invoke the gem is using the `letterpress` binary from the command line.
 
 You can pass the candidate letters as a contiguous string argument:
 
@@ -38,4 +38,18 @@ E I P T C T B N T Y M E I P H O X V I T K M Z I B
 ```
 
 ### ruby
+
+Here's an interactive shell session that uses the gem programmatically:
+
+``` ruby
+$ irb
+irb(main):001:0> require 'letterpress'
+irb(main):002:0> letters = ["e", "i", "p", "t", "c", "t", "b", "n", "t", "y", "m", "e", "i", "p", "h", "o", "x", "v", "i", "t", "k", "m", "z", "i", "b"]
+=> ["e", "i", "p", "t", "c", "t", "b", "n", "t", "y", "m", "e", "i", "p", "h", "o", "x", "v", "i", "t", "k", "m", "z", "i", "b"]
+irb(main):003:0> Letterpress.solve(letters)
+=> ["COMPETITIVITE", "...", "XI"]
+```
+
+
+
 

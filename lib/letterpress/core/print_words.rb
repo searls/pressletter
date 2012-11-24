@@ -1,7 +1,5 @@
 module Letterpress::Core
   def print_words(words)
-    words.as_array.map do |word|
-      "#{word.size} - #{word}"
-    end.join("\n")
+    words.as_array.join("\n")
   end
 end
