@@ -1,6 +1,6 @@
 module Letterpress::Shell
   describe CLI do
-    Given(:config) { ::Letterpress::Values::Config.new(File.expand_path("../../../../fixtures/simple_dict.txt", __FILE__))}
+    Given(:config) { Letterpress::Values::Config.new(File.expand_path("../../../../fixtures/simple_dict.txt", __FILE__)) }
     Given(:reads_input) { gimme(ReadsInput) }
     Given(:writes_output) { gimme(WritesOutput) }
 

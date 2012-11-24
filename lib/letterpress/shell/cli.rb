@@ -9,13 +9,7 @@ module Letterpress::Shell
     end
 
     def main
-      @writes_output.write(
-        print_words(
-          sort_words(
-            find_words(load_dictionary(@config.dictionary_location), create_letters(@reads_input.read))
-          )
-        )
-      )
+      @writes_output.write(print_words(solve(@config, create_letters(@reads_input.read))))
     end
   end
 end
