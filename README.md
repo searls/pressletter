@@ -2,6 +2,34 @@
 
 Letterpress is a fantastic game for iOS written by [Loren Brichter](http://www.atebits.com). Pressletter is a gem that solves Letterpress boards using an included plaintext dictionary of words.
 
+## Installation
+
+### global install
+
+To install pressletter to your system, run:
+
+```
+$ gem install pressletter
+```
+
+### bundler
+
+If you're using [Bundler](http://gembundler.com), add the pressletter gem to your Gemfile:
+
+``` ruby
+source 'https://rubygems.org'
+
+gem 'pressletter'
+```
+
+and then run:
+
+```
+$ bundle install
+```
+
+Inside your Bundler project, the binary can then be accessed with `bundle exec pressletter`.
+
 ## Example
 
 Here's what a board looked like in a game I played with [steveklabnik](https://github.com/steveklabnik):
