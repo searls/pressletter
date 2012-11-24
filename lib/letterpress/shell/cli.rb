@@ -9,14 +9,15 @@ module Letterpress::Shell
     end
 
     def main
-      letters = create_letters(@reads_input.read)
-
-      @writes_output.write <<-TEXT.gsub /^\s+/, ""
-      7 - EPITOME
-      7 - MEMITIC
-      4 - TENT
-      4 - TINT
-      TEXT
+      @writes_output.write(
+        formats_words(
+          ranks_words(
+            finds_words(
+              loads_dictionary(@config.dictionary_location), create_letters(@reads_input.read
+            )
+          )
+        )
+      )
     end
   end
 end
