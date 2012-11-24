@@ -1,7 +1,7 @@
 require 'rspec'
 require 'gimme'
 require 'rspec/given'
-require 'letterpress'
+require 'pressletter'
 
 
 module GimmeMatchers
