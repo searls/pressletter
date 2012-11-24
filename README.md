@@ -44,6 +44,7 @@ Here's an interactive shell session that uses the gem programmatically:
 ``` ruby
 $ irb
 irb(main):001:0> require 'pressletter'
+=> true
 irb(main):002:0> letters = ["e", "i", "p", "t", "c", "t", "b", "n", "t", "y", "m", "e", "i", "p", "h", "o", "x", "v", "i", "t", "k", "m", "z", "i", "b"]
 => ["e", "i", "p", "t", "c", "t", "b", "n", "t", "y", "m", "e", "i", "p", "h", "o", "x", "v", "i", "t", "k", "m", "z", "i", "b"]
 irb(main):003:0> Pressletter.solve(letters)
