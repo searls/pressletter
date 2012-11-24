@@ -1,4 +1,4 @@
 module Letterpress::Core
-  def loads_dictionary(location)
+  def rank_words(words)
   end
 end

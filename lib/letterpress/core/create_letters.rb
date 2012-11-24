@@ -1,8 +1,19 @@
 module Letterpress::Core
-  def create_letters(text_input)
-    #split to characters to []
-    #upcase
-    #remove nulls/spaces/nonA-Z
-    #sort
+  def create_letters(input)
+    Letterpress::Values::Letters.new(
+      ensure_alphabetical(
+        input.split('').
+          map { |c| c.upcase }.
+            reject { |c| c == ' ' }.compact.sort
+      )
+    )
   end
+
+private
+
+  def ensure_alphabetical(letters)
+    raise "Letters only!" if letters.any? {|l| l =~ /[^A-Z]/}
+    letters
+  end
+
 end

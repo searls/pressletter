@@ -10,11 +10,9 @@ module Letterpress::Shell
 
     def main
       @writes_output.write(
-        formats_words(
-          ranks_words(
-            finds_words(
-              loads_dictionary(@config.dictionary_location), create_letters(@reads_input.read
-            )
+        format_words(
+          rank_words(
+            find_words(load_dictionary(@config.dictionary_location), create_letters(@reads_input.read))
           )
         )
       )

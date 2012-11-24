@@ -1,5 +1,5 @@
 module Letterpress::Core
-  def formats_words(words)
+  def format_words(words)
     <<-TEXT.gsub /^\s+/, ""
     7 - EPITOME
     7 - MEMITIC
