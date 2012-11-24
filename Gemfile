@@ -8,4 +8,5 @@ group :development do
   gem 'guard-rspec'
   gem 'growl'
   gem 'rb-fsevent'
+  gem 'debugger'
 end

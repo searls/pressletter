@@ -2,7 +2,7 @@ module Letterpress::Shell
   class CLI
     include Letterpress::Core
 
-    def initialize(config = Letterpress::Values::Config.new(File.expand_path("../../../../assets/official_scrabble_dictionary_4.txt", __FILE__)), reads_input = ReadsInput.new, writes_output = WritesOutput.new)
+    def initialize(config = Letterpress::Values::Config.new(File.expand_path("../../../../assets/dictionary.txt", __FILE__)), reads_input = ReadsInput.new, writes_output = WritesOutput.new)
       @config = config
       @reads_input = reads_input
       @writes_output = writes_output

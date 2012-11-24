@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/letterpress'
+$LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
+
+require 'letterpress'
 
 Letterpress::Shell::CLI.new.main

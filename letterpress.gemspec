@@ -8,9 +8,18 @@ Gem::Specification.new do |gem|
   gem.version       = Letterpress::VERSION
   gem.authors       = ["Justin Searls"]
   gem.email         = ["searls@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = <<-EOF
+    letterpress is a tool for solving Letterpress puzzles. Using the
+    `letterpress` binary like this:
+
+    $ letterpress eiptctbntymeiphoxvitkmzib
+
+    The argument is a list of all the letters on a letterpress board
+    and will yield an ordered list (from longest to shorted) of all
+    legal words that can be made with the provided letters.
+  EOF
+  gem.summary       = %q{A tool for solving Letterpress puzzles}
+  gem.homepage      = "https://github.com/searls/letterpress"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
