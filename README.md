@@ -1,5 +1,7 @@
 # Pressletter
 
+[![Build Status](https://secure.travis-ci.org/searls/pressletter.png)](http://travis-ci.org/searls/pressletter)
+
 Letterpress is a fantastic game for iOS written by [Loren Brichter](http://www.atebits.com). Pressletter is a gem that solves Letterpress boards using an included plaintext dictionary of words.
 
 ## Installation
