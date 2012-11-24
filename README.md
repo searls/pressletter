@@ -67,6 +67,16 @@ E I P T C T B N T Y M E I P H O X V I T K M Z I B
 
 ```
 
+In each case, the results will print in order of largest-to-smallest length (with secondary alphabetical order for words of the same length). The output looks like:
+
+```
+$ pressletter eiptctbntymeiphoxvitkmzib
+COMPETITIVITE
+BIOETHICIEN
+...
+XI
+```
+
 ### Ruby
 
 You can, of course, also look for solutions using pure ruby. The public API is exceedingly simple:
